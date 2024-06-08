@@ -55,7 +55,7 @@ function HomePage() {
         <p className="text-slate-500 font-semibold ml-1 my-2 text-sm tracking-tight">
           Popular Choices
         </p>
-        <div className="grid gap-3 grid-cols-2 md:grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap-3 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
           {!loading
             ? recipes.map((recipe, index) => (
                 <RecipeCard key={index} recipe={recipe.recipe} {...getRandomColor()} />
